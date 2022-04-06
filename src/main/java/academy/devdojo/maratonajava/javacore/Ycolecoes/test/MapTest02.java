@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class MapTest02 {
     public static void main(String[] args) {
-        Consumidor consumidor1 = new Consumidor("William Suane");
+        Consumidor consumidor1 = new Consumidor("Ricardo Pires");
         Consumidor consumidor2 = new Consumidor("DevDojo Academy");
 
         Manga manga1 = new Manga(5L, "Hellsing Ultimate", 19.9);

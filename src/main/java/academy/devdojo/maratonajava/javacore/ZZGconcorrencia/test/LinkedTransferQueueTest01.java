@@ -6,9 +6,9 @@ public class LinkedTransferQueueTest01 {
     public static void main(String[] args) throws InterruptedException {
 //        ConcurrentLinkedQueue, SynchronousQueue, LinkedBlockingQueue
         TransferQueue<Object> tq = new LinkedTransferQueue<>();
-        System.out.println(tq.add("william"));
-        System.out.println(tq.offer("william"));
-        System.out.println(tq.offer("william", 10, TimeUnit.SECONDS));
+        System.out.println(tq.add("Ricardo"));
+        System.out.println(tq.offer("Ricardo"));
+        System.out.println(tq.offer("Ricardo", 10, TimeUnit.SECONDS));
         tq.put("DevDojo");
         if(tq.hasWaitingConsumer()){
             tq.transfer("Devojo");

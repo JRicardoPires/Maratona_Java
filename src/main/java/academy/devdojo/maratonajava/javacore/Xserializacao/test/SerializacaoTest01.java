@@ -12,8 +12,8 @@ import java.nio.file.Paths;
 
 public class SerializacaoTest01 {
     public static void main(String[] args) {
-        Aluno aluno = new Aluno(1L, "Suane", "123412121");
-        Turma turma = new Turma("Maratona Java Virado no Jiraya em Breve Ricos");
+        Aluno aluno = new Aluno(1L, "Ricardo", "123412121");
+        Turma turma = new Turma("Maratona Java");
         aluno.setTurma(turma);
         serializar(aluno);
         deserializar();

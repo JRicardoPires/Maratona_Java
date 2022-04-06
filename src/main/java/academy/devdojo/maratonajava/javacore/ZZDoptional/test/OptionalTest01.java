@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class OptionalTest01 {
     public static void main(String[] args) {
-        Optional<String> o1 = Optional.of("Aha uhu o DevDojo é foda.");
+        Optional<String> o1 = Optional.of("DevDojo");
         Optional<String> o2 = Optional.ofNullable(null);
         Optional<String> o3 = Optional.empty();
 
@@ -15,7 +15,7 @@ public class OptionalTest01 {
         System.out.println(o3);
         System.out.println("-------");
 
-        Optional<String> nameOptional = findName("William");
+        Optional<String> nameOptional = findName("Ricardo");
         String empty = nameOptional.orElse("EMPTY");
         System.out.println(empty);
         nameOptional.ifPresent(s -> System.out.println(s.toUpperCase()));
@@ -23,7 +23,7 @@ public class OptionalTest01 {
     }
 
     private static Optional<String> findName(String name) {
-        List<String> list = List.of("William", "DevDojo");
+        List<String> list = List.of("Ricardo", "DevDojo");
         int i = list.indexOf(name);
         if (i != 1) {
             return Optional.of(list.get(i));

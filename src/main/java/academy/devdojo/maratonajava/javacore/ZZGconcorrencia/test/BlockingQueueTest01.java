@@ -7,11 +7,11 @@ import java.util.concurrent.TimeUnit;
 public class BlockingQueueTest01 {
     public static void main(String[] args) throws InterruptedException {
         BlockingQueue<String> bq = new ArrayBlockingQueue<>(1);
-        bq.put("William");
+        bq.put("Ricardo");
         System.out.printf("%s added the value %s%n", Thread.currentThread().getName(), bq.peek());
         System.out.println("Trying to add another value");
         new Thread(new RemoveFromQueue(bq)).start();
-        bq.put("Suane");
+        bq.put("Pires");
         System.out.printf("%s added the value %s%n", Thread.currentThread().getName(), bq.peek());
     }
 

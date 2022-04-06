@@ -9,8 +9,8 @@ public class DataTransferObjectTest01 {
         Currency currency = CurrencyFactory.newCurrency(country);
         Person person = Person.PersonBuilder
                 .builder()
-                .firstName("William")
-                .lastName("Suane")
+                .firstName("Ricardo")
+                .lastName("Pires")
                 .build();
         ReportDto reportDto = ReportDto.ReportDtoBuilder.builder()
                 .aircraftName(aircraft.getName())

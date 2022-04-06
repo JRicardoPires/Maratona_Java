@@ -2,11 +2,11 @@ package academy.devdojo.maratonajava.javacore.Qstring.test;
 
 public class StringBuilderTest01 {
     public static void main(String[] args) {
-        String nome = "William Suane";
+        String nome = "Ricardo Pires";
         nome.concat(" DevDojo");
         nome.substring(0,3);
         System.out.println(nome);
-        StringBuffer sb = new StringBuffer("William Suane");
+        StringBuffer sb = new StringBuffer("Ricardo Pires");
         sb.append(" DevDojo").append(" Academy");
         sb.reverse();
         sb.reverse();

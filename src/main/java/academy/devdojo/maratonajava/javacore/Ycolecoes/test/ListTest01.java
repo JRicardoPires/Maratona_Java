@@ -7,12 +7,12 @@ public class ListTest01 {
     public static void main(String[] args) {
         List<String> nomes = new ArrayList<>(16);
         List<String> nomes2 = new ArrayList<>(16);
-        nomes.add("William");
+        nomes.add("Ricardo");
         nomes.add("DevDojo");
-        nomes2.add("Suane");
+        nomes2.add("Pires");
         nomes2.add("Academy");
 
-//        System.out.println(nomes.remove("william"));
+//        System.out.println(nomes.remove("ricardo"));
         nomes.addAll(nomes2);
 
         for(String nome: nomes){

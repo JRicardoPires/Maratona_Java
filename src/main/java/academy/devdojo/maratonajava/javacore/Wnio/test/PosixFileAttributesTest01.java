@@ -12,7 +12,7 @@ import java.util.Set;
 
 public class PosixFileAttributesTest01 {
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("/home/william/dev/file.txt");
+        Path path = Paths.get("/home/Ricardo/dev/file.txt");
         PosixFileAttributes posixFileAttributes = Files.readAttributes(path, PosixFileAttributes.class);
         System.out.println(posixFileAttributes.permissions());
         PosixFileAttributeView fileAttributeView = Files.getFileAttributeView(path, PosixFileAttributeView.class);

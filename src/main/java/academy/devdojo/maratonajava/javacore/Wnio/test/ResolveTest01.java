@@ -5,12 +5,12 @@ import java.nio.file.Paths;
 
 public class ResolveTest01 {
     public static void main(String[] args) {
-        Path dir = Paths.get("home/william");
+        Path dir = Paths.get("home/ricardo");
         Path arquivo = Paths.get("dev/arquivo.txt");
         Path resolve = dir.resolve(arquivo);
         System.out.println(resolve);
 
-        Path absoluto = Paths.get("/home/william");
+        Path absoluto = Paths.get("/home/ricardo");
         Path relativo = Paths.get("dev");
         Path file = Paths.get("file.txt");
 

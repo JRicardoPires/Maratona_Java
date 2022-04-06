@@ -5,14 +5,14 @@ import java.nio.file.Paths;
 
 public class RelativizeTest01 {
     public static void main(String[] args) {
-        Path dir = Paths.get("/home/william");
-        Path clazz = Paths.get("/home/william/devdojofoda/OlaMundo.java");
+        Path dir = Paths.get("/home/Ricardo");
+        Path clazz = Paths.get("/home/Ricardo/devdojo/OlaMundo.java");
         Path pathToClazz = dir.relativize(clazz);
         System.out.println(pathToClazz);
 
-        Path absoluto1 = Paths.get("/home/william");
+        Path absoluto1 = Paths.get("/home/Ricardo");
         Path absoluto2 = Paths.get("/usr/local");
-        Path absoluto3 = Paths.get("/home/william/devdojofoda/OlaMundo.java");
+        Path absoluto3 = Paths.get("/home/Ricardo/devdojo/OlaMundo.java");
         Path relativo1 = Paths.get("temp");
         Path relativo2 = Paths.get("temp/temp.2021921");
 
